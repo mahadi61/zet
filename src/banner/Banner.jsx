@@ -1,20 +1,26 @@
+import Link from "next/link";
+
 const Banner = () => {
   return (
-    <div>
-      <div className="hero min-h-screen bg-base-200">
+    <div className="max-w-6xl mx-auto pt-12 pb-9">
+      <div className="hero min-h-full bg-sky-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
-            src="/images/stock/photo-1635805737707-575885ab0820.jpg"
-            className="max-w-sm rounded-lg shadow-2xl"
+            src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHeroImgNew.d1d917dd.png&w=1920&q=75"
+            className="max-w-sm "
           />
           <div>
-            <h1 className="text-5xl font-bold">Box Office News!</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
-            <button className="btn btn-primary">Get Started</button>
+            <h1 className="text-5xl font-bold">
+              Become a Financial Advisor and{" "}
+              <span className="text-[#2075f0]">Earn Rs.1 Lakh/Month</span>
+            </h1>
+            <p className="py-6">No investment required</p>
+            <Link href={""} className="">
+              <img
+                src="https://zetapp.in/_next/static/media/downloadBtnDark.a0f01343.svg"
+                alt=""
+              />
+            </Link>
           </div>
         </div>
       </div>
