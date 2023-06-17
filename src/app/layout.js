@@ -1,9 +1,9 @@
-import Footer from '@/footer/Footer'
-import Navbar from '@/navbar/Navbar'
-
-import { Inter } from 'next/font/google'
-import './globals.css'
-
+import BigAnimation from '@/app/BigAnimation';
+import Footer from '@/footer/Footer';
+import Navbar from '@/navbar/Navbar';
+import "aos/dist/aos.css";
+import { Inter } from 'next/font/google';
+import './globals.css';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -15,6 +15,11 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
+ 
+
+
+
   return (
     <html lang="en">
       
@@ -25,7 +30,9 @@ export default function RootLayout({ children }) {
         <Navbar></Navbar>
         </div>
         </nav>
+        <BigAnimation></BigAnimation>
         {children}
+        
         <Footer></Footer>
       </body>
 

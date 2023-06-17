@@ -9,7 +9,11 @@ const Product = () => {
               <p>We are trusted by best brand in the country</p>
             </div>
           </div>
-          <div className="grid lg:grid-cols-2 px-3 lg:px-0 gap-4 z-10">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="grid lg:grid-cols-2 px-3 lg:px-0 gap-4 z-10"
+          >
             {/* card 1 */}
             <div>
               <div

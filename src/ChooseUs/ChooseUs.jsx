@@ -1,6 +1,6 @@
 const ChooseUs = () => {
   return (
-    <div className="flex justify-center items-center gap-20 my-20">
+    <div className="flex flex-col lg:flex-row justify-center items-center gap-20 my-20">
       <div className="text-center bg-no-repeat bg-[url('https://zetapp.in/_next/static/media/decImg.ead9275f.svg')]">
         <h2 className="text-xl font-bold">
           Why <span className="text-[#2075f0]">Choose Us</span>
@@ -11,7 +11,11 @@ const ChooseUs = () => {
           alt=""
         />
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        className="grid  lg:grid-cols-2 gap-4"
+      >
         <div className="w-64">
           <img
             src="https://zetapp.in/_next/static/media/zero_investment.d5743aab.svg"

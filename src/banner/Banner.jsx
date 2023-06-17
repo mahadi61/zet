@@ -1,8 +1,13 @@
+import "aos/dist/aos.css";
 import Link from "next/link";
 
 const Banner = () => {
   return (
-    <div className="max-w-6xl mx-auto lg:pt-12 pb-9">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      className="max-w-6xl mx-auto lg:pt-12 pb-9"
+    >
       <div className="hero min-h-full bg-sky-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
