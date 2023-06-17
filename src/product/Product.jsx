@@ -9,7 +9,7 @@ const Product = () => {
               <p>We are trusted by best brand in the country</p>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4 z-10">
+          <div className="grid lg:grid-cols-2 px-3 lg:px-0 gap-4 z-10">
             {/* card 1 */}
             <div>
               <div
@@ -101,7 +101,7 @@ const Product = () => {
             {/* card end */}
           </div>
         </div>
-        <div className="flex justify-between w-full absolute top-0">
+        <div className="flex justify-between flex-col lg:flex-row w-full absolute top-0">
           <img
             src="https://zetapp.in/_next/static/media/decImg.ead9275f.svg"
             alt=""
