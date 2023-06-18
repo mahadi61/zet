@@ -13,7 +13,7 @@ const ChooseUs = () => {
       </div>
       <div
         data-aos="fade-up"
-        data-aos-duration="3000"
+        data-aos-duration="2000"
         className="grid  lg:grid-cols-2 gap-4"
       >
         <div className="w-64">

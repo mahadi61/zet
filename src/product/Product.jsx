@@ -16,10 +16,7 @@ const Product = () => {
           >
             {/* card 1 */}
             <div>
-              <div
-                className="card card-side  "
-                style={{ backgroundColor: "rgb(237, 255, 236)" }}
-              >
+              <div className="card card-side hover:bg-white bg-[#EDFFEC]">
                 <figure className="ps-8">
                   <img
                     className="w-32"
@@ -38,10 +35,7 @@ const Product = () => {
             </div>
             {/* card 2 */}
             <div>
-              <div
-                className="card card-side bg-amber-300 "
-                style={{ backgroundColor: "rgb(255, 241, 202)" }}
-              >
+              <div className="card card-side hover:bg-white bg-[#FFF1CA] ">
                 <figure className="ps-8">
                   <img
                     className="w-32"
@@ -60,10 +54,7 @@ const Product = () => {
             </div>
             {/* card 3 */}
             <div>
-              <div
-                className="card card-side bg-pink-300 "
-                style={{ backgroundColor: "rgb(255, 238, 231)" }}
-              >
+              <div className="card card-side hover:bg-white bg-[#FFEEE7] ">
                 <figure className="ps-8">
                   <img
                     className="w-32"
@@ -82,10 +73,7 @@ const Product = () => {
             </div>
             {/* card 4 */}
             <div>
-              <div
-                className="card card-side"
-                style={{ backgroundColor: "rgb(255, 245, 231)" }}
-              >
+              <div className="card card-side bg-[#FFF5E7] hover:bg-white">
                 <figure className="ps-8">
                   <img
                     className="w-32"
