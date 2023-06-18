@@ -1,3 +1,7 @@
+"use client";
+
+import Tilt from "react-parallax-tilt";
+
 const Product = () => {
   return (
     <div className="mt-9">
@@ -15,81 +19,89 @@ const Product = () => {
             className="grid lg:grid-cols-2 px-3 lg:px-0 gap-4 z-10"
           >
             {/* card 1 */}
-            <div>
-              <div className="card card-side hover:bg-white bg-[#EDFFEC]">
-                <figure className="ps-8">
-                  <img
-                    className="w-32"
-                    src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FCC.28aa750d.png&w=1920&q=75"
-                    alt="Movie"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">CREDIT CARDS</h2>
-                  <p>
-                    100% Contactless Application Process with Instant Approval
-                    From Top Banks.
-                  </p>
+            <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5}>
+              <div>
+                <div className="card card-side hover:bg-white bg-[#EDFFEC]">
+                  <figure className="ps-8">
+                    <img
+                      className="w-32"
+                      src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FCC.28aa750d.png&w=1920&q=75"
+                      alt="Movie"
+                    />
+                  </figure>
+                  <div className="card-body">
+                    <h2 className="card-title">CREDIT CARDS</h2>
+                    <p>
+                      100% Contactless Application Process with Instant Approval
+                      From Top Banks.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Tilt>
             {/* card 2 */}
-            <div>
-              <div className="card card-side hover:bg-white bg-[#FFF1CA] ">
-                <figure className="ps-8">
-                  <img
-                    className="w-32"
-                    src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLoan.cadd88a9.png&w=1920&q=75"
-                    alt="Movie"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">LOANS</h2>
-                  <p>
-                    100% online process. Instant offers. Affordable Rate of
-                    Interest on loans.
-                  </p>
+            <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5}>
+              <div>
+                <div className="card card-side hover:bg-white bg-[#FFF1CA] ">
+                  <figure className="ps-8">
+                    <img
+                      className="w-32"
+                      src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLoan.cadd88a9.png&w=1920&q=75"
+                      alt="Movie"
+                    />
+                  </figure>
+                  <div className="card-body">
+                    <h2 className="card-title">LOANS</h2>
+                    <p>
+                      100% online process. Instant offers. Affordable Rate of
+                      Interest on loans.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Tilt>
             {/* card 3 */}
-            <div>
-              <div className="card card-side hover:bg-white bg-[#FFEEE7] ">
-                <figure className="ps-8">
-                  <img
-                    className="w-32"
-                    src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FBNPL.3974f2b2.png&w=1920&q=75"
-                    alt="Movie"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">BUY NOW PAY LATER</h2>
-                  <p>
-                    Short-term financing that allows consumers to make purchases
-                    and pay for them over time.
-                  </p>
+            <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5}>
+              <div>
+                <div className="card card-side hover:bg-white bg-[#FFEEE7] ">
+                  <figure className="ps-8">
+                    <img
+                      className="w-32"
+                      src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FBNPL.3974f2b2.png&w=1920&q=75"
+                      alt="Movie"
+                    />
+                  </figure>
+                  <div className="card-body">
+                    <h2 className="card-title">BUY NOW PAY LATER</h2>
+                    <p>
+                      Short-term financing that allows consumers to make
+                      purchases and pay for them over time.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Tilt>
             {/* card 4 */}
-            <div>
-              <div className="card card-side bg-[#FFF5E7] hover:bg-white">
-                <figure className="ps-8">
-                  <img
-                    className="w-32"
-                    src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAccountSave.69831c7c.png&w=1920&q=75"
-                    alt="Movie"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">SAVING ACCOUNTS</h2>
-                  <p>
-                    ZET offers range of savings account that suits your personal
-                    needs for the banking.
-                  </p>
+            <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5}>
+              <div>
+                <div className="card card-side bg-[#FFF5E7] hover:bg-white">
+                  <figure className="ps-8">
+                    <img
+                      className="w-32"
+                      src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAccountSave.69831c7c.png&w=1920&q=75"
+                      alt="Movie"
+                    />
+                  </figure>
+                  <div className="card-body">
+                    <h2 className="card-title">SAVING ACCOUNTS</h2>
+                    <p>
+                      ZET offers range of savings account that suits your
+                      personal needs for the banking.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Tilt>
             {/* card end */}
           </div>
         </div>

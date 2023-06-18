@@ -12,10 +12,12 @@
     "aos": "^3.0.0-beta.6",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.6",
+    "firebase": "^9.22.2",
     "next": "13.4.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-fast-marquee": "^1.6.0",
+    "react-parallax-tilt": "^1.7.147",
     "swiper": "^9.4.1"
   },
   "devDependencies": {
