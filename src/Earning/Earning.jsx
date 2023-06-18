@@ -28,8 +28,10 @@ const Earning = () => {
       }}
     >
       <div className="flex justify-center items-center flex-col max-w-6xl mx-auto z-10">
-        <div className="text-white mt-14 mb-20">
-          <h1 className="text-2xl text-white">Start Earning in 3 Easy Steps</h1>
+        <div className="text-white mt-14 mb-20 text-center">
+          <h1 className="text-2xl text-white font-bold">
+            Start Earning in 3 Easy Steps
+          </h1>
           <p>We have create the app the make your earning easy</p>
         </div>
         <div></div>
@@ -54,7 +56,7 @@ const Earning = () => {
               <p
                 className="text-xl py-3 pr-2 ps-5 mb-8 w-28 bg-[#538BFF] rounded-sm text-white"
                 style={{
-                  clipPath: "polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%)}",
+                  clipPath: "polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%)",
                 }}
               >
                 STEP 1
@@ -84,7 +86,7 @@ const Earning = () => {
               <p
                 className="text-xl py-3 pr-2 ps-5 mb-8 w-28 bg-[#538BFF] rounded-sm text-white"
                 style={{
-                  clipPath: "polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%)}",
+                  clipPath: "polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%)",
                 }}
               >
                 STEP 2
@@ -114,7 +116,7 @@ const Earning = () => {
               <p
                 className="text-xl py-3 pr-2 ps-5 mb-8 w-28 bg-[#538BFF] rounded-sm text-white"
                 style={{
-                  clipPath: "polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%)}",
+                  clipPath: "polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%)",
                 }}
               >
                 STEP 3
