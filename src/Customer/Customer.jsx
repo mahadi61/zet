@@ -13,15 +13,15 @@ import { Autoplay, Pagination } from "swiper";
 const Customer = () => {
   return (
     <div
-      className="bg-[#145CC5] my-16 h-[700px] flex items-center"
+      className="bg-[#145CC5] lg:my-16 h-[700px] flex items-center"
       style={{ clipPath: "polygon(0% 25%, 100% 0%, 100% 75%, 0% 100%)" }}
     >
       <div
-        className="bg-[#417FDA] flex justify-end items-center relative w-[1152px] mx-auto h-[500px]"
+        className="bg-[#417FDA] flex justify-center lg:justify-end items-center relative w-[1152px] mx-auto h-[500px]"
         style={{ clipPath: "polygon(0px 30%, 100% 0%, 100% 70%, 0px 100%)" }}
       >
-        <div className="text-white -ms-16 pr-7 w-[500px]">
-          <h1 className="text-xl font-bold mb-4">THE ZET EFFECT</h1>
+        <div className="text-white lg:-ms-16 lg:pr-7 w-[280px] lg:w-[500px] z-10">
+          <h1 className="text-xl  font-bold mb-4">THE ZET EFFECT</h1>
 
           <Swiper
             // centeredSlides={true}

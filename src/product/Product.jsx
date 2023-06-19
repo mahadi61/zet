@@ -16,12 +16,12 @@ const Product = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="3000"
-            className="grid lg:grid-cols-2 px-3 lg:px-0 gap-4 z-10"
+            className="grid lg:grid-cols-2 px-3 lg:px-0 gap-4 mb-6 lg:mb-0 z-10"
           >
             {/* card 1 */}
             <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5}>
               <div>
-                <div className="card card-side hover:bg-white bg-[#EDFFEC]">
+                <div className="card card-side gap-2 items-center  hover:bg-white bg-[#EDFFEC]">
                   <figure className="ps-8">
                     <img
                       className="w-32"
@@ -29,7 +29,7 @@ const Product = () => {
                       alt="Movie"
                     />
                   </figure>
-                  <div className="card-body">
+                  <div className="lg:card-body">
                     <h2 className="card-title">CREDIT CARDS</h2>
                     <p>
                       100% Contactless Application Process with Instant Approval
@@ -42,7 +42,7 @@ const Product = () => {
             {/* card 2 */}
             <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5}>
               <div>
-                <div className="card card-side hover:bg-white bg-[#FFF1CA] ">
+                <div className="card card-side gap-2 items-center hover:bg-white bg-[#FFF1CA] ">
                   <figure className="ps-8">
                     <img
                       className="w-32"
@@ -50,7 +50,7 @@ const Product = () => {
                       alt="Movie"
                     />
                   </figure>
-                  <div className="card-body">
+                  <div className="lg:card-body">
                     <h2 className="card-title">LOANS</h2>
                     <p>
                       100% online process. Instant offers. Affordable Rate of
@@ -63,7 +63,7 @@ const Product = () => {
             {/* card 3 */}
             <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5}>
               <div>
-                <div className="card card-side hover:bg-white bg-[#FFEEE7] ">
+                <div className="card card-side gap-2 items-center hover:bg-white bg-[#FFEEE7] ">
                   <figure className="ps-8">
                     <img
                       className="w-32"
@@ -71,7 +71,7 @@ const Product = () => {
                       alt="Movie"
                     />
                   </figure>
-                  <div className="card-body">
+                  <div className="lg:card-body">
                     <h2 className="card-title">BUY NOW PAY LATER</h2>
                     <p>
                       Short-term financing that allows consumers to make
@@ -84,7 +84,7 @@ const Product = () => {
             {/* card 4 */}
             <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5}>
               <div>
-                <div className="card card-side bg-[#FFF5E7] hover:bg-white">
+                <div className="card card-side gap-2 items-center bg-[#FFF5E7] hover:bg-white">
                   <figure className="ps-8">
                     <img
                       className="w-32"
@@ -92,7 +92,7 @@ const Product = () => {
                       alt="Movie"
                     />
                   </figure>
-                  <div className="card-body">
+                  <div className="lg:card-body">
                     <h2 className="card-title">SAVING ACCOUNTS</h2>
                     <p>
                       ZET offers range of savings account that suits your
@@ -111,7 +111,7 @@ const Product = () => {
             alt=""
           />
           <img
-            className=""
+            className="hidden lg:block"
             src="https://zetapp.in/_next/static/media/decImg2.3cc2964a.svg"
             alt=""
           />

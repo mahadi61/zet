@@ -6,13 +6,13 @@ const Investors = () => {
   return (
     <div>
       <div className="max-w-6xl mx-auto my-12">
-        <h1 className="text-[#2F3440] text-4xl font-bold my-8">
+        <h1 className="text-[#2F3440] text-center lg:text-left text-4xl font-bold my-8">
           Meet the Investors
         </h1>
         <div
           data-aos="fade-up"
           data-aos-duration="2000"
-          className="grid lg:grid-cols-3 lg:gap-28 mb-10 lg:px-16 px-6"
+          className="grid lg:grid-cols-3 lg:gap-28 gap-2  mb-10 lg:px-16 px-6"
         >
           <Tilt
             tiltEnable={true}

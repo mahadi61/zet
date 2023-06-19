@@ -3,9 +3,9 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar ">
+      <div className="navbar">
         <div className="navbar-start">
-          <div className="dropdown">
+          <div className="dropdown z-10">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

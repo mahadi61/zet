@@ -28,13 +28,14 @@ const Earning = () => {
       }}
     >
       <div className="flex justify-center items-center flex-col max-w-6xl mx-auto z-10">
-        <div className="text-white mt-14 mb-20 text-center">
-          <h1 className="text-2xl text-white font-bold">
+        <div className="text-white mt-14 lg:mb-20 mb-5 text-center">
+          <h1 className="lg:text-3xl text-white font-bold">
             Start Earning in 3 Easy Steps
           </h1>
-          <p>We have create the app the make your earning easy</p>
+          <p className="text-xs lg:text-xl">
+            We have create the app the make your earning easy
+          </p>
         </div>
-        <div></div>
       </div>
       <Swiper
         // centeredSlides={true}
@@ -52,16 +53,16 @@ const Earning = () => {
       >
         <SwiperSlide>
           <div className=" flex items-center justify-between h-full max-w-6xl mx-auto">
-            <div className="text-white ps-44 w-1/2">
+            <div className="text-white ps-2 lg:ps-44 w-1/2">
               <p
-                className="text-xl py-3 pr-2 ps-5 mb-8 w-28 bg-[#538BFF] rounded-sm text-white"
+                className="text-xl lg:py-3 lg:pr-2 lg:ps-5 mb-8 w-28 bg-[#538BFF] rounded-sm text-white"
                 style={{
                   clipPath: "polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%)",
                 }}
               >
                 STEP 1
               </p>
-              <p className="text-2xl text-[#9ECFFF] font-bold mb-5">
+              <p className="lg:text-2xl text-[#9ECFFF] font-bold mb-5">
                 Download the App and Sign up as a ZET agent
               </p>
               <img
@@ -74,7 +75,7 @@ const Earning = () => {
                 autoPlay
                 loop
                 // controls
-                className="h-[400px] w-fit"
+                className="lg:h-[400px] h-[200px] w-fit"
                 src="/video.mp4"
               ></video>
             </div>
@@ -82,16 +83,16 @@ const Earning = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className=" flex items-center justify-between h-full max-w-6xl mx-auto">
-            <div className="text-white ps-44 w-1/2">
+            <div className="text-white ps-2 lg:ps-44 w-1/2">
               <p
-                className="text-xl py-3 pr-2 ps-5 mb-8 w-28 bg-[#538BFF] rounded-sm text-white"
+                className="text-xl lg:py-3 lg:pr-2 lg:ps-5 mb-8 w-28 bg-[#538BFF] rounded-sm text-white"
                 style={{
                   clipPath: "polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%)",
                 }}
               >
                 STEP 2
               </p>
-              <p className="text-2xl text-[#9ECFFF] font-bold mb-5">
+              <p className="lg:text-2xl text-[#9ECFFF] font-bold mb-5">
                 Register your customers and Recommend financial products
               </p>
               <img
@@ -104,7 +105,7 @@ const Earning = () => {
                 autoPlay
                 loop
                 // controls
-                className="h-[400px] w-fit"
+                className="lg:h-[400px] h-[200px] w-fit"
                 src="/video.mp4"
               ></video>
             </div>
@@ -112,16 +113,16 @@ const Earning = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className=" flex items-center justify-between h-full max-w-6xl mx-auto">
-            <div className="text-white ps-44 w-1/2">
+            <div className="text-white ps-2 lg:ps-44 w-1/2">
               <p
-                className="text-xl py-3 pr-2 ps-5 mb-8 w-28 bg-[#538BFF] rounded-sm text-white"
+                className="text-xl lg:py-3 lg:pr-2 lg:ps-5 mb-8 w-28 bg-[#538BFF] rounded-sm text-white"
                 style={{
                   clipPath: "polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%)",
                 }}
               >
                 STEP 3
               </p>
-              <p className="text-2xl text-[#9ECFFF] font-bold mb-5">
+              <p className="lg:text-2xl text-[#9ECFFF] font-bold mb-5">
                 Start earning upto ₹ 1 Lakh every month
               </p>
               <img
@@ -134,7 +135,7 @@ const Earning = () => {
                 autoPlay
                 loop
                 // controls
-                className="h-[400px] w-fit"
+                className="lg:h-[400px] h-[200px] w-fit"
                 src="/video.mp4"
               ></video>
             </div>
