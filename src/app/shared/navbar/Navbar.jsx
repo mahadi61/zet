@@ -1,4 +1,5 @@
 import NavLink from "@/components/NavLink";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -118,9 +119,12 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-          <a className="px-2 py-2 rounded-lg ms-3 bg-[#2075f0] text-white">
+          <Link
+            href={""}
+            className="px-2 py-2 rounded-lg ms-3 bg-[#2075f0] text-white"
+          >
             Download ZET
-          </a>
+          </Link>
         </div>
       </div>
     </div>
