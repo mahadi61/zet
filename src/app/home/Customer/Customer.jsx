@@ -24,10 +24,8 @@ const Customer = () => {
           <h1 className="lg:text-xl ms-2  font-bold lg:mb-4">THE ZET EFFECT</h1>
 
           <Swiper
-            // centeredSlides={true}
             autoplay={{
               delay: 2500,
-              // disableOnInteraction: false,
             }}
             pagination={{
               clickable: true,
@@ -35,7 +33,6 @@ const Customer = () => {
             }}
             Autoplay={true}
             modules={[Autoplay, Pagination]}
-            // onAutoplayTimeLeft={onAutoplayTimeLeft}
             className=""
           >
             <SwiperSlide>

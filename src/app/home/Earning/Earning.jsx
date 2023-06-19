@@ -12,20 +12,11 @@ import "swiper/css/pagination";
 import { Autoplay } from "swiper";
 
 const Earning = () => {
-  // // const progressCircle = useRef(null);
-  // const progressContent = useRef(null);
-  // const onAutoplayTimeLeft = (progress) => {
-  //   progressContent.current.style.setProperty("red", 1 - progress);
-  //   // .current.textContent = `${Math.ceil(time / 1000)}s`;
-  // };
   const [progressNumber, setProgressNumber] = useState(0);
 
-  // new
   const progressBar = useRef(null);
   const onAutoplayTimeLeft = (s, time, progress) => {
-    // console.log(parseInt(Math.ceil(time / 1000) * 10));
     setProgressNumber(100 - parseInt(Math.ceil(time / 1000) * 10));
-    // progressBar.current.style.setProperty("width", Math.floor(progress * 100));
   };
 
   return (
@@ -58,9 +49,6 @@ const Earning = () => {
         Autoplay={true}
         modules={[Autoplay]}
         onAutoplayTimeLeft={onAutoplayTimeLeft}
-        // onAutoplayStart={onAutoplayTimeLeft}
-        onAut
-        className=""
       >
         <SwiperSlide>
           <div className=" flex items-center justify-between h-full max-w-6xl mx-auto">
@@ -93,7 +81,7 @@ const Earning = () => {
               <video
                 autoPlay
                 loop
-                // controls
+                controls
                 className="lg:h-[400px] h-[200px] w-fit"
                 src="/video.mp4"
               ></video>
@@ -130,7 +118,7 @@ const Earning = () => {
               <video
                 autoPlay
                 loop
-                // controls
+                controls
                 className="lg:h-[400px] h-[200px] w-fit"
                 src="/video.mp4"
               ></video>
@@ -167,7 +155,7 @@ const Earning = () => {
               <video
                 autoPlay
                 loop
-                // controls
+                controls
                 className="lg:h-[400px] h-[200px] w-fit"
                 src="/video.mp4"
               ></video>
