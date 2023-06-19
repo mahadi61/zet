@@ -81,7 +81,7 @@ const Earning = () => {
               <video
                 autoPlay
                 loop
-                controls
+                muted
                 className="lg:h-[400px] h-[200px] w-fit"
                 src="/video.mp4"
               ></video>
@@ -118,7 +118,7 @@ const Earning = () => {
               <video
                 autoPlay
                 loop
-                controls
+                muted
                 className="lg:h-[400px] h-[200px] w-fit"
                 src="/video.mp4"
               ></video>
@@ -155,7 +155,7 @@ const Earning = () => {
               <video
                 autoPlay
                 loop
-                controls
+                muted
                 className="lg:h-[400px] h-[200px] w-fit"
                 src="/video.mp4"
               ></video>
