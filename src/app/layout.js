@@ -1,9 +1,9 @@
 import BigAnimation from '@/app/BigAnimation';
-import Footer from '@/footer/Footer';
-import Navbar from '@/navbar/Navbar';
 import "aos/dist/aos.css";
 import { Inter } from 'next/font/google';
 import './globals.css';
+import Footer from './shared/footer/Footer';
+import Navbar from './shared/navbar/Navbar';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         <BigAnimation></BigAnimation>
         {children}
         
-        <Footer></Footer>
+       <Footer></Footer>
       </body>
 
     </html>

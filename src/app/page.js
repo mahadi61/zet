@@ -1,9 +1,10 @@
-import ChooseUs from "@/ChooseUs/ChooseUs";
-import Customer from "@/Customer/Customer";
-import Earning from "@/Earning/Earning";
-import Banner from "@/banner/Banner";
-import Product from "@/product/Product";
-import TrustedBy from "@/trustedBy/TrustedBy";
+import ChooseUs from "./home/ChooseUs/ChooseUs";
+import Customer from "./home/Customer/Customer";
+import Earning from "./home/Earning/Earning";
+import Banner from "./home/banner/Banner";
+import Product from "./home/product/Product";
+import TrustedBy from "./home/trustedBy/TrustedBy";
+
 
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
       <Product></Product>  
       <Customer></Customer>
       <div className="max-w-6xl mx-auto">
-      <ChooseUs></ChooseUs>
+     <ChooseUs></ChooseUs>
       </div>
       <Earning></Earning>
     </main>
