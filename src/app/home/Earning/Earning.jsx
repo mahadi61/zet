@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -11,16 +12,25 @@ import "swiper/css/pagination";
 import { Autoplay } from "swiper";
 
 const Earning = () => {
-  // const progressCircle = useRef(null);
+  // // const progressCircle = useRef(null);
   // const progressContent = useRef(null);
-  // const onAutoplayTimeLeft = (s, time, progress) => {
-  //   progressCircle.current.style.setProperty("--progress", 1 - progress);
-  //   progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+  // const onAutoplayTimeLeft = (progress) => {
+  //   progressContent.current.style.setProperty("red", 1 - progress);
+  //   // .current.textContent = `${Math.ceil(time / 1000)}s`;
   // };
+  const [progressNumber, setProgressNumber] = useState(0);
+
+  // new
+  const progressBar = useRef(null);
+  const onAutoplayTimeLeft = (s, time, progress) => {
+    // console.log(parseInt(Math.ceil(time / 1000) * 10));
+    setProgressNumber(100 - parseInt(Math.ceil(time / 1000) * 10));
+    // progressBar.current.style.setProperty("width", Math.floor(progress * 100));
+  };
 
   return (
     <div
-      className="bg-[#0A2540] my-16     relative "
+      className="bg-[#0A2540] my-16  relative "
       style={{
         paddingTop: "15vw",
         paddingBottom: "20vw",
@@ -38,17 +48,18 @@ const Earning = () => {
         </div>
       </div>
       <Swiper
-        // centeredSlides={true}
         autoplay={{
-          delay: 2500,
-          // disableOnInteraction: false,
+          delay: 10000,
+          disableOnInteraction: false,
         }}
         pagination={{
           clickable: true,
         }}
         Autoplay={true}
         modules={[Autoplay]}
-        // onAutoplayTimeLeft={onAutoplayTimeLeft}
+        onAutoplayTimeLeft={onAutoplayTimeLeft}
+        // onAutoplayStart={onAutoplayTimeLeft}
+        onAut
         className=""
       >
         <SwiperSlide>
@@ -65,6 +76,14 @@ const Earning = () => {
               <p className="lg:text-2xl text-[#9ECFFF] font-bold mb-5">
                 Download the App and Sign up as a ZET agent
               </p>
+
+              <div class="w-8/12 ps-[${progressNumber}%] bg-gray-200 rounded-full h-2 mb-3 dark:bg-gray-700">
+                <div
+                  class={`bg-blue-600  h-full rounded-full`}
+                  style={{ width: `${progressNumber}%` }}
+                  ref={progressBar}
+                ></div>
+              </div>
               <img
                 src="https://zetapp.in/_next/static/media/downloadBtnDark.a0f01343.svg"
                 alt=""
@@ -95,6 +114,13 @@ const Earning = () => {
               <p className="lg:text-2xl text-[#9ECFFF] font-bold mb-5">
                 Register your customers and Recommend financial products
               </p>
+              <div class="w-8/12 bg-gray-200 rounded-full h-2.5 mb-3 dark:bg-gray-700">
+                <div
+                  class={`bg-blue-600  h-2.5 rounded-full`}
+                  style={{ width: `${progressNumber}%` }}
+                  ref={progressBar}
+                ></div>
+              </div>
               <img
                 src="https://zetapp.in/_next/static/media/downloadBtnDark.a0f01343.svg"
                 alt=""
@@ -125,6 +151,13 @@ const Earning = () => {
               <p className="lg:text-2xl text-[#9ECFFF] font-bold mb-5">
                 Start earning upto ₹ 1 Lakh every month
               </p>
+              <div class="w-8/12 bg-gray-200 rounded-full h-2.5 mb-3 dark:bg-gray-700">
+                <div
+                  class={`bg-blue-600 h-2.5 rounded-full`}
+                  style={{ width: `${progressNumber}%` }}
+                  ref={progressBar}
+                ></div>
+              </div>
               <img
                 src="https://zetapp.in/_next/static/media/downloadBtnDark.a0f01343.svg"
                 alt=""
@@ -141,12 +174,6 @@ const Earning = () => {
             </div>
           </div>
         </SwiperSlide>
-        {/* <div className="autoplay-progress" slot="container-end">
-          <svg viewBox="0 0 48 48" ref={progressCircle}>
-            <circle cx="24" cy="24" r="20"></circle>
-          </svg>
-          <span ref={progressContent}></span>
-        </div> */}
       </Swiper>
 
       <img
